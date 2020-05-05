@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-border-color: #000000; -fx-border-width: 4; -fx-border-style: solid;" styleClass="anch" stylesheets="@styler.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vehicle_exit.exitViewController">
+   <children>
+      <ImageView fitHeight="118.0" fitWidth="152.0" layoutX="454.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="134.0" layoutY="12.0" prefHeight="72.0" prefWidth="329.0" text="Vehicle  Exit" textFill="#3e98c9" underline="true">
+         <font>
+            <Font name="Franklin Gothic Medium" size="57.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="101.0" text="Vehicle No. :">
+         <font>
+            <Font name="Consolas Italic" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicle" layoutX="235.0" layoutY="102.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Button layoutX="384.0" layoutY="101.0" mnemonicParsing="false" onAction="#doFetch" text="Fetch">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Label layoutX="90.0" layoutY="212.0" text="Floor :">
+         <font>
+            <Font name="Consolas Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFloor" layoutX="197.0" layoutY="211.0" prefHeight="29.0" prefWidth="51.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="330.0" layoutY="153.0" text="Entry time:">
+         <font>
+            <Font name="Consolas Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="entDate" layoutX="199.0" layoutY="152.0" prefHeight="29.0" prefWidth="108.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="41.0" layoutY="153.0" text="Entry date:">
+         <font>
+            <Font name="Consolas Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="entTime" layoutX="478.0" layoutY="152.0" prefHeight="29.0" prefWidth="80.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="308.0" layoutY="212.0" text="Vehicle Type:">
+         <font>
+            <Font name="Consolas Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtType" layoutX="484.0" layoutY="211.0" prefHeight="29.0" prefWidth="51.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Separator layoutX="15.0" layoutY="282.0" prefHeight="3.0" prefWidth="223.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Separator>
+      <Label layoutX="245.0" layoutY="261.0" text="Exit Info" textFill="#3e98c9">
+         <font>
+            <Font name="Cuprum Bold" size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutX="369.0" layoutY="283.0" prefHeight="3.0" prefWidth="214.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Separator>
+      <Label layoutX="340.0" layoutY="321.0" text="Time:">
+         <font>
+            <Font name="Consolas Italic" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCurDate" layoutX="154.0" layoutY="322.0" prefHeight="29.0" prefWidth="162.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="68.0" layoutY="320.0" text="Date:">
+         <font>
+            <Font name="Consolas Italic" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCurTime" layoutX="426.0" layoutY="322.0" prefHeight="29.0" prefWidth="137.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="204.0" layoutY="435.0" text="Amount :" textFill="#4a609e">
+         <font>
+            <Font name="Cuprum Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAmount" layoutX="340.0" layoutY="437.0" prefHeight="33.0" prefWidth="122.0" text="_____________">
+         <font>
+            <Font name="Cuprum Bold" size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="244.0" layoutY="379.0" mnemonicParsing="false" onAction="#doBill" text="Generate Bill">
+         <font>
+            <Font name="Cuprum Bold" size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="145.0" layoutY="495.0" mnemonicParsing="false" onAction="#doUpdate" text="Update">
+         <font>
+            <Font name="Cuprum Bold" size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="427.0" layoutY="495.0" mnemonicParsing="false" onAction="#doClose" text="Close">
+         <font>
+            <Font name="Cuprum Bold" size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="291.0" layoutY="495.0" mnemonicParsing="false" onAction="#doNew" text="New">
+         <font>
+            <Font name="Cuprum Bold" size="21.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Label fx:id="lblAlert" layoutX="268.0" layoutY="549.0" textFill="#ee0707">
+         <font>
+            <Font name="Cuprum Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
